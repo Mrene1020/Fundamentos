@@ -1,0 +1,22 @@
+#include <LiquidCrystal.h> 
+2 
+ 
+3 LiquidCrystal lcd(12,11,5,4,3,2); 
+4 
+ 
+5 void setup (){ 
+6   lcd.begin (16, 2); 
+7   lcd.print ("Hola mundo...!!!"); 
+8 } 
+9 
+ 
+10 
+ 
+11 void loop() { 
+12   // Turn off the blinking cursor: 
+13   lcd.noBlink(); 
+14   delay(3000); 
+15   // Turn on the blinking cursor: 
+16   lcd.blink(); 
+17   delay(3000); 
+18 } 
