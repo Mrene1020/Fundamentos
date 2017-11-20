@@ -1,0 +1,26 @@
+#include <LiquidCrystal.h> 
+2 
+ 
+3 int contraste = 10; 
+4 
+ 
+5 LiquidCrystal lcd(12, 11, 5, 4, 3, 2); 
+6 
+ 
+7 void setup () { 
+8   lcd.begin (16, 2); 
+9   lcd.print ("Hola mundo...!!!"); 
+10 } 
+11 
+ 
+12 
+ 
+13 void loop() { 
+14   analogWrite (contraste, 50); 
+15   // Turn off the blinking cursor: 
+16   lcd.noBlink(); 
+17   delay(3000); 
+18   // Turn on the blinking cursor: 
+19   lcd.blink(); 
+20   delay(3000); 
+21 } 
