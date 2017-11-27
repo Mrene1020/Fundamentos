@@ -1,0 +1,17 @@
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+
+using namespace std;
+void main(){
+	float X,Y,Z,Promedio;
+	cout<<"Ingrese x: ";
+	cin>>X;
+	cout<<"Ingrese Y: ";
+	cin>>Y;
+	cout<<"Ingrese Z: ";
+	cin>>Z;
+	Promedio=(X+Y+Z)/3;
+	cout<<"El promedio es: "<<Promedio;
+	getch();
+}
