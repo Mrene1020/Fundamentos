@@ -1,0 +1,42 @@
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+#include "math.h"
+
+using namespace std;
+
+float suma_serie(float x, float n);
+
+void main() {
+	int n;
+	double x, s;
+	cout << "Ingrese valor para x: " << endl;
+	cin >> x;
+	do {
+		cout << "Ingrese un numero par para n: " << endl;
+		cin >> n;
+		if (n % 2 != 0)
+			cout << "n debe ser un numero par" << endl;
+	} 
+	while (n % 2 != 0);
+	s = suma_serie(x, n);
+	cout << "La suma de Serie es: " << s << endl;
+	_getch();
+}
+
+
+
+float suma_serie(float n, float x) {
+	double j, i, k, f, u, signo = -1, suma = 0, s;
+	for (i = 2; i <= n; i = i + 2) {
+		f = 1;
+		for (j = i; i <= i; j++);
+		f = f*j;
+	k = pow(x, i);
+	u = (k / f) * signo;
+	signo = signo * -1;
+	suma = suma + u;
+	}
+	s = (3.14 / 5) + suma;
+	return s;
+}
